@@ -1,4 +1,4 @@
-# String Ranger
+# String Ranger [![Build Status](https://travis-ci.org/associatedemployers/string-ranger.svg?branch=master)](https://travis-ci.org/associatedemployers/string-ranger)
 An easy to use, case-insensitive string to date range converter.
 
 ## Why
