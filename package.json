@@ -16,7 +16,9 @@
     "dates",
     "string",
     "to",
-    "date"
+    "date",
+    "from",
+    "convert"
   ],
   "author": "James1x0",
   "license": "MIT",
