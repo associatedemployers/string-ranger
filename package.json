@@ -1,0 +1,36 @@
+{
+  "name": "string-ranger",
+  "version": "0.0.1",
+  "description": "Neat utility that converts strings to date ranges. Today => { start: { Date }, end: { Date } }",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha \"tests/test.js\" --reporter=spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/associatedemployers/string-ranger.git"
+  },
+  "keywords": [
+    "date",
+    "range",
+    "dates",
+    "string",
+    "to",
+    "date"
+  ],
+  "author": "James1x0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/associatedemployers/string-ranger/issues"
+  },
+  "homepage": "https://github.com/associatedemployers/string-ranger#readme",
+  "devDependencies": {
+    "babel-eslint": "^4.1.8",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "lodash": "^4.3.0",
+    "moment": "^2.11.2"
+  }
+}
