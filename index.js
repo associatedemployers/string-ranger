@@ -14,7 +14,7 @@ var staticConversions = { today: 'this day' },
  * @return {Object}             Date range object
  */
 module.exports = function ( rangeString ) {
-  var _rs = rangeString;
+  var _rs = rangeString.toLowerCase();
 
   if ( !_rs ) {
     return undefined;
@@ -25,7 +25,7 @@ module.exports = function ( rangeString ) {
   // If we have a static word, like "Today"
   if ( keys.length === 1 ) {
     // Get the static mapping
-    _rs = staticConversions[rangeString];
+    _rs = staticConversions[_rs];
 
     if ( !_rs ) {
       return undefined;
@@ -35,8 +35,8 @@ module.exports = function ( rangeString ) {
   }
 
   // Alias the array positions
-  var verb = keys[0].toLowerCase(),
-      unit = keys[1].toLowerCase(),
+  var verb = keys[0],
+      unit = keys[1],
       units;
 
   // Starts handling "last 30 days"
