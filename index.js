@@ -14,7 +14,7 @@ var staticConversions = { today: 'this day' },
  * @return {Object}             Date range object
  */
 module.exports = function ( rangeString ) {
-  var _rs = rangeString.toLowerCase();
+  var _rs = rangeString ? rangeString.toLowerCase() : rangeString;
 
   if ( !_rs ) {
     return undefined;
